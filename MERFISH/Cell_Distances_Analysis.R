@@ -12,7 +12,7 @@ library(transport) # Optimal transport
 library(gridExtra) # Arrange multiple grid-based figures
 
 # Source the Python script for cell proximity calculations
-source_python("Scripts/Tims_cell_proximity_python_helper.py")
+source_python("Scripts/cell_proximity_python_helper.py")
 
 # Function to calculate Cohen's d effect size
 cohen_d <- function(x, y) {
