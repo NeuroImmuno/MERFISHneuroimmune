@@ -1,9 +1,9 @@
 ```{r}
 # Point to the Python script location
-source_python("~/Kalish_Lab/MERFISH_Analysis/Scripts/microenv_spatial_plot_helper.py")
+source_python("~/microenv_spatial_plot_helper.py")
 # Prepare the distance dataframe for analysis
-input <- "/Users/tim/Kalish_Lab/MERFISH_Analysis/Project/MIA_Updated_Object/e14_e18_broader_celltype.rds"
-output_dir <- '/Users/tim/Kalish_Lab/Project/MicroEnv_Spatial/'
+input <- "/e14_e18_broader_celltype.rds"
+output_dir <- '/MicroEnv_Spatial/'
 cell_annotation_column <- 'broader_celltype'
 comparison_column <- "Condition" # This column Must be two condition  
 sample_column <- "Sample" #column that identify each tissue
