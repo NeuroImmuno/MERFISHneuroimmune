@@ -2,10 +2,10 @@
 The Maternal Gut-Immune Axis Programs the Neuroimmune Landscape of the Developing Brain
 This GitHub repository documents the core analyses of the study Neuroimmune landscape, which includes MERFISH analysis for developing mouse brain during mid and late gestation(n=3), alterations after maternal immune activation and microbiome depletion during pregnancy and snATACseq data analysis in embryonic brain at E12.5 (males and females).
 
-Data availability
+**Data availability**
 The raw datasets as well as cell ranger processed data analyzed in this study are available in the Gene Expression Omnibus repository under accession numbers: GSE269617 and GSE276002
 
-Sofware enviornment
+**Sofware enviornment**
 The analyses were performed within an R 4.2 enviornment.
 
 R version 4.2.1 (2022-06-23) Platform: x86_64-pc-linux-gnu (64-bit) Running under: AlmaLinux 8.8 (Sapphire Caracal)
@@ -55,7 +55,7 @@ gridExtra_2.3
 
 
 PYTHON 3 Packages
-numpy 
+numpy
 pandas 
 scanpy
 sys
