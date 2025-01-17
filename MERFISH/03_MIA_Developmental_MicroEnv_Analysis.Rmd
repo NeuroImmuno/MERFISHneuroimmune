@@ -14,8 +14,8 @@ plan("multisession", workers = 10)
 
 ```{r}
 
-saveDir <- '/Users/tim/Kalish_Lab/Projects_ongoing/MIA_Niche/Developmental_Niches/'
-obj <- readRDS("/Users/tim/Kalish_Lab/Projects_ongoing/MIA_Objects/e14_e18_broader_celltype.rds")
+saveDir <- '/Developmental_Niches/'
+obj <- readRDS("e14_e18_broader_celltype.rds")
 cell.group = "broader_celltype" 
 neighbors.k = 30
 
