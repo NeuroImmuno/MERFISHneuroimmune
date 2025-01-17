@@ -69,3 +69,35 @@ glob
 anndata
 scipy.spatial
 tqdm
+
+**Notes: **-In instances where the same bioinformatic analysis was applied several times (i.e. multiple samples), one example script is provided
+
+- The snATAC-seq scripts are processed as it is for all samples ( specific script). Input data is the cellranger processed files avaiable in GEO accession number:GSE276002
+- MERFISH Scripts, the order of operations was as follows:
+
+0. Merfish QC filteration -  (general script) - Input data is metadata and cell by gene file for each sample available in GEO accession number: GSE269617
+
+1. Create seurat object for each sample and integrate all samples (general script provided to create seurat object for each sample and their integration)
+
+2. Perform differential analysis for each celltypes to compare E14 and E18 (specific scripts for E14 and E18 comparison)
+
+3. Perform micro environmnet analsis comparing E14 and E18 samples (Specific script)- Indput data is merged seurat object for E14 and E18 dataset.
+
+4. Create micro environment spatial plots (general script - uses two datasets to generate spatial plots.
+  
+5. Impute scRNAseq data from previous study to MERFISH data - the input scRNAseq data is avaiable at GEO accession number: GSE148237 
+
+6. Create seurat object for each sample and integrate all samples (MIA-males, MIA-females, PBS-males, PBS-females (n=3)) - general script provided to create seurat object for each sample and their integration
+
+7. Differential analysis and volcano plot code to compare 4 conditions - general script shows example to compare MIA males with PBS males.
+
+8. Create seurat object for each sample and integrate all samples (MMD-males, MMD-females) - general script provided to create seurat object for each sample and their integration with PBS samples
+
+9. Differential analysis and volcano plot code to compare conditions - Specific script shows example to compare MMD with PBS.
+
+10. Perform Ligand-Receptor analysis using cellchat - general script.
+
+11. Python helper script to run cell distance analysis to compare MIA vs PBS/MMD vs PBS.
+
+12. Perform cell distance analysis using above python helper code.
+  
