@@ -1,3 +1,14 @@
+library(Seurat)
+#library(BPCells)
+library(dplyr)
+library(ggplot2)
+library(ggrepel)
+library(patchwork)
+# set this option when analyzing large datasets
+options(future.globals.maxSize = 3e+09)
+options(Seurat.object.assay.version = "v5")
+
+
 # preprocessing of each merfish segmented dataset was performed using following code for each region of MIA, MMD and PBS dataset
 
 af1<-ReadVizgen(data.dir="/E18_MIA/HDF_new/E18M_A3_reg1/", type = c("segmentations", "centroids"), z = 3L)
