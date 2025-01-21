@@ -12,7 +12,7 @@ This GitHub repository documents the core analyses of the Neuroimmune landscape 
 2. MerFISH - The processed files in the form of cell by gene and cell metadata files for each sample are available in the Gene Expression Omnibus repository under accession numbers: GSE269617
 
 **Sofware enviornment**
-The analyses were performed within an R 4.2 enviornment.
+**The MERFISH analysis** was performed within an R 4.2 enviornment.
 
 R version 4.2.1 (2022-06-23) Platform: x86_64-pc-linux-gnu (64-bit) Running under: AlmaLinux 8.8 (Sapphire Caracal)
 
@@ -75,6 +75,31 @@ glob
 anndata
 scipy.spatial
 tqdm
+
+**The snATACseq analysis** was performed within an R 4.3 enviornment.
+
+R version 4.3.0 (2023-04-21) Platform: x86_64-pc-linux-gnu (64-bit) Running under: AlmaLinux 8.8 (Sapphire Caracal)
+
+The following packages and versions are required and should be loaded prior to running the analysis
+
+SeuratObject_5.0.1
+Seurat_4.3.0
+cowplot_1.1.1
+patchwork_1.3.0.9000
+ggplot2_3.4.4
+EnsDb.Mmusculus.v79_2.99.0
+ensembldb_2.24.0
+AnnotationFilter_1.24.0
+GenomicFeatures_1.52.0
+AnnotationDbi_1.62.1
+Biobase_2.60.0
+GenomicRanges_1.52.0
+GenomeInfoDb_1.36.0
+IRanges_2.34.0
+S4Vectors_0.38.1
+BiocGenerics_0.48.1
+Signac_1.10.0
+dplyr_1.1.2
 
 **Code usage**
 In instances where the same bioinformatic analysis was applied several times (i.e. multiple samples), one example script is provided
