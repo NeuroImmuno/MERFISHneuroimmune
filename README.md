@@ -16,7 +16,7 @@ This GitHub repository documents the core analyses of the Neuroimmune landscape 
 
 R version 4.2.1 (2022-06-23) Platform: x86_64-pc-linux-gnu (64-bit) Running under: AlmaLinux 8.8 (Sapphire Caracal)
 
-The following packages and versions are required and should be loaded prior to running the analysis
+The following packages and versions are required and should be loaded prior to running the analysis:
 
 Seurat_5.0.1
 dplyr_1.1.4
@@ -60,7 +60,7 @@ lme4_1.1-10
 gridExtra_2.3
 
 
-PYTHON 3 Packages
+PYTHON 3 Packages:
 numpy
 pandas 
 scanpy
@@ -80,7 +80,7 @@ tqdm
 
 R version 4.3.0 (2023-04-21) Platform: x86_64-pc-linux-gnu (64-bit) Running under: AlmaLinux 8.8 (Sapphire Caracal)
 
-The following packages and versions are required and should be loaded prior to running the analysis
+The following packages and versions are required and should be loaded prior to running the analysis:
 
 SeuratObject_5.0.1
 Seurat_4.3.0
