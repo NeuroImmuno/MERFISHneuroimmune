@@ -39,7 +39,7 @@ for(celltype in cell_types){
 
                         verbose = T, test.use = "MAST", pseudocount.use = 1, logfc.threshold = 0, min.pct = 0.01,
 
-                        slot = "counts")
+                        slot = "counts", latent.vars = c("Replicate", "nUMI"))
 
       des[[celltype]][[name]]<-mast
 
